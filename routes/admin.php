@@ -18,7 +18,7 @@ use Illuminate\Http\Request;
   
 Route::prefix('/admin')->group(function () {
     Route::get('/', function () {
-        return view('auth.login');
+        return redirect('/admin/dashboard');
     })->name('login');
 
     Route::get('/notFound', function () {
